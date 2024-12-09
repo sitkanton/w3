@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки с контентом</title>
+    <link rel="stylesheet" href="card-component.css">
+    <script src="card-component.js" defer></script>
+</head>
+<body>
+    <card-component>
+        <div slot="header">
+            <h2>Заголовок карточки 1</h2>
+        </div>
+        <div slot="content">
+            <p>Это текстовое содержание первой карточки.</p>
+        </div>
+    </card-component>
+
+    <card-component>
+        <div slot="header">
+            <h2>Заголовок карточки 2</h2>
+        </div>
+        <div slot="content">
+            <p>Это текстовое содержание второй карточки с изображением.</p>
+            <img src="image.jpg" alt="Пример изображения">
+        </div>
+    </card-component>
+
+    <card-component>
+        <div slot="header">
+            <h2>Заголовок карточки 3</h
